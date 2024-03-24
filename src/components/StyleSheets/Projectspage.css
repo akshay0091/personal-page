@@ -1,0 +1,220 @@
+.projectpage {
+	height: 100vh;
+	width: auto;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	padding-top: 150px;
+	padding-bottom: 70px;
+}
+@font-face {
+	font-family: 'bruno';
+	src: local('bruno'),
+		url('../../fonts/BrunoAce-Regular.ttf') format('truetype');
+}
+.projectpagecontainer {
+	height: 30vh;
+	width: auto;
+	background-color: rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-radius: 50px;
+	margin-bottom: 50px;
+}
+.projectpictureframe {
+	align-self: center;
+	height: 150px;
+	width: 250px;
+	background-color: white;
+
+	animation-name: example;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	border-radius: 15%;
+}
+
+.project_body_writeup {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	padding-left: 20px;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	border-radius: 10px;
+	border-top: 1px;
+}
+.project_body_text {
+	width: 136vb;
+	height: auto;
+	font-size: 12px;
+	color: white;
+	text-align: justify;
+	font-family: monospace;
+}
+.projectbuttoncontainer {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+.learn_btnp {
+	height: 20px;
+	width: 80px;
+	text-align: center;
+	font-family: monospace;
+	color: black;
+	align-content: center;
+	background-color: white;
+	align-self: center;
+	border-radius: 10px;
+	transition-duration: 0.2s;
+	margin-bottom: 15px;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+.learn_btnp:hover {
+	height: 20px;
+	width: 100px;
+	color: white;
+	align-content: center;
+	background-color: transparent;
+	align-self: center;
+	border-radius: 10px;
+}
+.projectsback {
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.project_heading {
+	background-color: white;
+	color: black;
+	width: 100%;
+	font-family: 'bruno';
+	border-radius: 5px;
+	padding-left: 20px;
+}
+.Skillset {
+	color: white;
+
+	font-family: monospace;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+@media only screen and (max-width: 800px) {
+	.projectpage {
+		height: auto;
+		width: auto;
+		background-color: rgba(0, 0, 0, 0.7);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 100px;
+		padding-bottom: 0px;
+	}
+	.projectpagecontainer {
+		height: auto;
+		width: auto;
+		background-color: black;
+		background-image: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		border-radius: 0;
+	}
+	.projectpictureframe {
+		align-self: center;
+		height: 150px;
+		width: 200px;
+		margin-bottom: 10px;
+		background-color: white;
+		border-radius: 15%;
+		animation-name: example;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 10px;
+		margin-top: 15px;
+	}
+
+	.project_body_writeup {
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		text-align: center;
+		border-style: none;
+	}
+	.project_body_text {
+		width: 250px;
+		height: auto;
+		align-items: center;
+		font-size: 12px;
+		color: white;
+		text-align: center;
+		font-family: monospace;
+	}
+	.projectbuttoncontainer {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin-bottom: 15px;
+	}
+	.learn_btnp {
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		font-family: monospace;
+		color: black;
+		align-content: center;
+		background-color: white;
+		align-self: center;
+		border-radius: 10px;
+		border: dotted 3px white;
+		transition-duration: 0.2s;
+		margin-bottom: 15px;
+		text-decoration: none;
+	}
+	a {
+		text-decoration: none;
+	}
+	.learn_btnp:hover {
+		height: 30px;
+		width: 100px;
+		color: white;
+		align-content: center;
+		background-color: transparent;
+		align-self: center;
+		border-radius: 10px;
+	}
+	.project_heading {
+		background-color: white;
+		margin-top: 10px;
+		color: black;
+		width: 100%;
+		font-family: 'bruno';
+		border-radius: 5px;
+		padding-left: 2px;
+		font-size: 12px;
+		text-align: center;
+	}
+	.Skillset {
+		color: white;
+
+		font-family: monospace;
+		font-size: 9px;
+		margin-bottom: 3px;
+	}
+}

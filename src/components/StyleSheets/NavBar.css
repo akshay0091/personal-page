@@ -1,0 +1,135 @@
+.NavigationContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	left: 25%;
+	right: 25%;
+
+	font-family: monospace;
+	font-size: 14px;
+}
+.Navcontainer {
+	list-style-type: none;
+	background-color: transparent;
+	display: block;
+	position: top;
+	padding: 5px 100px;
+	border-radius: 0px 0px 50px 50px;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+.Link {
+	color: white;
+}
+.Link:hover {
+	color: black;
+}
+
+.Navitems {
+	float: left;
+	display: block;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.Navitems:hover {
+	color: rgba(255, 255, 255, 1);
+	border-radius: 15px 15px 15px 15px;
+	transition-duration: 0.4s;
+}
+.button {
+	display: none;
+}
+@media only screen and (max-width: 1000px) {
+	.NavigationContainer {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+	}
+	.Navcontainer {
+		list-style-type: none;
+		background-color: rgba(85, 84, 84, 0.5);
+		align-self: left;
+		padding: 10px 50px;
+		border-radius: 0px 0px 50px 50px;
+		display: none;
+		border-bottom-style: none;
+		border-width: 1px;
+		border-color: none;
+	}
+
+	.Navitems {
+		display: flex;
+		margin: 0;
+		width: 100%;
+		justify-content: center;
+		flex-direction: column;
+		color: rgba(255, 255, 255, 0.7);
+		text-align: center;
+		text-decoration: none;
+		align-content: stretch;
+		padding: 14px auto;
+		transition-duration: 0.4s;
+		border-radius: 0;
+	}
+
+	.Navitems:hover {
+		color: rgba(255, 255, 255, 1);
+		align-content: stretch;
+		transition-duration: 0.4s;
+	}
+	.button {
+		display: block;
+		position: fixed;
+		font-size: 20px;
+		background-color: rgba(255, 255, 255, 0.8);
+		margin-top: 15px;
+		padding: 15px 15px;
+		border-radius: 50%;
+		transition-duration: 0.2s;
+	}
+	.button_hover {
+		display: block;
+		position: fixed;
+		font-size: 20px;
+		color: white;
+		margin-top: 15px;
+		box-shadow: 6px 6px 8px white;
+		background-color: white;
+		padding: 15px 15px;
+		border-radius: 50%;
+	}
+	.down_button {
+		height: 35px;
+		width: 30px;
+		padding-top: 15px;
+		transition: transform 0.7s;
+	}
+	.down_button_hover {
+		height: 35px;
+		width: 30px;
+		padding-top: 15px;
+		transition: transform 0.7s;
+		transform: rotate(180deg);
+	}
+	.Active {
+		list-style-type: none;
+		background-color: rgba(85, 84, 84, 0.5);
+		align-self: auto;
+		margin: 40px 40px;
+		padding: 0;
+		display: flex;
+		position: fixed;
+		flex-direction: column;
+		margin-top: 90px;
+		border-radius: 10%;
+		align-content: stretch;
+		align-items: center;
+	}
+}
